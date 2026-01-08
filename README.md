@@ -28,4 +28,7 @@ You should then be able to make requests to the API at `http://localhost:8000` u
 curl -X POST "http://localhost:8000/predict" \
   -H "Content-Type: application/json" \
   -d '{"x":102.4,"y":41.2,"shot_body_part":"Left Foot","shot_type":"Open Play","play_pattern":"Regular Play"}'
+
 ```
+
+**For more info on the model check out the [la-liga-xg](https://github.com/jeetmitra01/la-liga-xg) repo.**
