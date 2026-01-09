@@ -11,7 +11,7 @@ I decided to combine my knowledge and understanding of ML with my love for socce
 
 ## What's next
 
-I plan to add more features to the platform, such as a web interface to view the model's predictions and monitor its performance. I also plan to add more features to the model like defensive pressure, and maybe break it down more by player, team, and opponent.
+I have added a streamlit frontend to make it easier for users to interact with the model and see where the shot would be on the pitch. I also plan to add more features to the model like defensive pressure, and maybe break it down more by player, team, and opponent.
 
 ## How to run
 
@@ -29,6 +29,18 @@ curl -X POST "http://localhost:8000/predict" \
   -H "Content-Type: application/json" \
   -d '{"x":102.4,"y":41.2,"shot_body_part":"Left Foot","shot_type":"Open Play","play_pattern":"Regular Play"}'
 
+```
+
+You can also run the streamlit app by running:
+
+```bash
+streamlit run app/streamlit_app.py
+```
+
+## Run with docker
+
+```bash
+docker compose up --build
 ```
 
 **For more info on the model check out the [la-liga-xg](https://github.com/jeetmitra01/la-liga-xg) repo.**
